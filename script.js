@@ -1,3 +1,9 @@
+const cardBookContainer = document.querySelector(".card-container");
+const addBookButton = document.querySelector(".add-book-btn");
+// eslint-disable-next-line operator-linebreak
+const userInputFormContainer = document.querySelector(".form-container");
+const userInputForm = document.querySelector("form");
+
 const myLibrary = [];
 // array to save the objects
 
@@ -9,21 +15,17 @@ function Book(title, author, pages, read) {
   this.read = read;
 }
 
-function addBookToLibrary() {
-  const theHobbit = new Book("Hobbit", "J.R.R Tolkien", 310, "Yes");
-  const theLastWish = new Book("The Last Wish", "Andrzej Sapkowski", 288, "No");
-  const theHarryPotter = new Book(
-    "Harry Potter and the Philosopher's Stone",
-    "J. K. Rowling",
-    "223",
-    "No"
-  );
-  myLibrary.push(theHobbit);
-  myLibrary.push(theHobbit);
-  myLibrary.push(theHarryPotter);
+function addBookToLibrary(userInput) {
+  // user input and store the new object into the array
+  const title = document.getElementById("title").value;
+  const author = document.getElementById("author").value;
+  const pages = document.getElementById("pages").value;
+  const read = document.getElementById("read-status").value;
+  userInput = new Book(`${title}`, `${author}`, `${pages}`, `${read}`);
+  myLibrary.push(userInput);
+  console.log(myLibrary);
+  return userInput;
 }
-
-addBookToLibrary();
 
 function addBookToCard(bookObject) {
   // objects needs to be passed just to create
@@ -55,4 +57,33 @@ function addBookToCard(bookObject) {
     cardContainer.appendChild(readDiv);
   }
   return bookObject;
+}
+
+function removeDuplicateBook() {
+  const bookItems = document
+    .querySelectorAll(".card")
+    .forEach((n) => n.remove());
+}
+
+userInputForm.addEventListener("submit", (e) => {
+  // prevent default submit
+  e.preventDefault();
+  removeDuplicateBook();
+  addBookToLibrary("add book");
+  addBookToCard("add card");
+  resetForm();
+  userInputFormContainer.style.opacity = 0;
+});
+
+function resetForm() {
+  userInputForm.reset();
+}
+
+// show the form when user clicks on add book button
+addBookButton.addEventListener("click", () => {
+  addBookBtn();
+});
+
+function addBookBtn() {
+  userInputFormContainer.style.opacity = 1;
 }

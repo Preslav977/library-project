@@ -1,1 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.nav-bar {
+  border: 2px solid black;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-book-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-book-btn {
+  border: 2px solid black;
+  padding: 10px 20px 10px 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.form-content {
+  display: flex;
+  border: 2px solid black;
+  height: 310px;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+}
+
+.modal {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.read-status {
+  display: flex;
+}
+
+.checkbox-container {
+  margin-left: 23px;
+  display: flex;
+}
+
+.submit-btn {
+  padding: 10px 50px 10px 50px;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  line-height: 20px;
+}
+
+.card-content {
+  text-align: center;
+  padding-top: 5px;
+}
