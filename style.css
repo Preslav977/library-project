@@ -1,15 +1,145 @@
-* {
-  padding: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Shantell Sans", cursive, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #f4f4f5;
+}
+
+.grid-container {
+  display: grid;
 }
 
 .nav-bar {
-  border: 2px solid black;
-  height: 120px;
+  box-shadow: 2px 0px 0px 2px rgba(0, 0, 0, 0.1);
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  font-size: 22px;
 }
 
 .add-book-container {
@@ -20,24 +150,44 @@
 }
 
 .add-book-btn {
-  border: 2px solid black;
   padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.add-book-btn:hover {
+  cursor: pointer;
 }
 
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -20px;
 }
 
 .form-content {
   display: flex;
-  border: 2px solid black;
   height: 310px;
   justify-content: center;
   align-items: center;
   width: 240px;
+  position: absolute;
+  border: 0;
+  border-radius: 10px;
+  top: 25%;
+  background-color: #e4e4e7;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.form-content {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transform: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
 .modal {
@@ -50,32 +200,71 @@
 }
 
 .checkbox-container {
-  margin-left: 23px;
+  margin-left: 10px;
   display: flex;
 }
 
 .submit-btn {
   padding: 10px 50px 10px 50px;
+  background-color: #86efac;
+  border: 0;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 .card-container {
   display: flex;
+  border: 2px;
+  margin: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
   margin-top: 20px;
   margin-left: 20px;
-  height: 200px;
+  height: 230px;
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-  line-height: 20px;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+  line-height: 30px;
+  font-size: 17px;
+  background-color: white;
+  border: 0;
+  border-radius: 10px;
 }
 
 .card-content {
   text-align: center;
   padding-top: 5px;
+}
+
+.read-button,
+.remove-button {
+  padding: 10px 0 10px 0;
+  width: 300px;
+  border: 0;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+}
+
+.read-button,
+.remove-button {
+  margin-top: 15px;
+}
+
+.read-button:hover,
+.remove-button:hover,
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+.add-book-btn,
+.submit-btn,
+.read-button,
+.remove-button {
+  font-family: "Shantell Sans", cursive, sans-serif;
 }

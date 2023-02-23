@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Library Project</title>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <script src="script.js" defer></script>
-
     <div class="grid-container">
       <div class="nav-bar">
           <h1>
@@ -22,16 +24,16 @@
           </button>
         </div>
         <div class="card-container">
-        </div>
+      </div>
         <div class="form-container">
         <div class="form-content">
           <form action="#" method="get">
             <label for="title-book">Title:</label>
-            <input class="modal" type="text" name="title-book" id="title">
+            <input class="modal" type="text" name="title-book" id="title" minlength="5" maxlength="50" required>
             <label for="author-book">Author:</label>
-            <input class="modal" type="text" name="author-book" id="author">
+            <input class="modal" type="text" name="author-book" id="author" minlength="5" maxlength="50" required>
             <label for="pages-book">Pages:</label>
-            <input class="modal" type="number" name="pages-book" id="pages">
+            <input class="modal" type="number" name="pages-book" id="pages" min=50 max="10000" required>
             <div class="read-status">
             <label class="modal" for="read-status">Did you read it?</label>
             <div class="checkbox-container">
