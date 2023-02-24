@@ -4,10 +4,10 @@ This is the final result, the project is build using the HTML, CSS and Javascrip
 2.	Objective
 
 The objectives of this project, were to build a library project, that were five different steps.
-  *Function, that first is going to be store the objects, created from the constructor, and constructor with four properties. In order that function to work, i created a object manually and store them into the array. 
-    *Function, that creates a card that contains information about the book. The card is created with DOM, which allows to be created or deleted with each loop. 
-      *Creating a form that, allows the user to input into a form, after that to save that information creating a card. In other words when user inputs something, it will create first a object, after that, it will be stored into the array, and finally a card is creating to be shown into the display. 
-        *After that cards, that were created and displayed now needs to be removed from the DOM and the array, so when user is done reading, he can delete it and make a new one.     *The easy solution was to use data-attributes, that allows the cards to have a unique ID so can be deleted. 
+  2.Function, that first is going to be store the objects, created from the constructor, and constructor with four properties. In order that function to work, i created a object manually and store them into the array. 
+    2.Function, that creates a card that contains information about the book. The card is created with DOM, which allows to be created or deleted with each loop. 
+      2.Creating a form that, allows the user to input into a form, after that to save that information creating a card. In other words when user inputs something, it will create first a object, after that, it will be stored into the array, and finally a card is creating to be shown into the display. 
+        2.After that cards, that were created and displayed now needs to be removed from the DOM and the array, so when user is done reading, he can delete it and make a new one.     2.The easy solution was to use data-attributes, that allows the cards to have a unique ID so can be deleted. 
 The final objective is, to be created a function that, allows the user to toggle a button for each book when is created, so the book status can be read or not read.
 
 3.	My personal objective
