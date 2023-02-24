@@ -8,27 +8,27 @@ This is the final result, the project is build using the HTML, CSS and Javascrip
 
 The objectives of this project, were to build a library project, that were five different steps.
 
-1. Function, that first is going to be store the objects, created from the constructor,
+2.1. Function, that first is going to be store the objects, created from the constructor,
    and constructor with four properties. In order that function to work, i created a object
    manually and store them into the array.
-2. Function, that creates a card that contains information about the book.
+2.2. Function, that creates a card that contains information about the book.
    The card is created with DOM, which allows to be created or deleted with each loop.
-3. Creating a form that, allows the user to input into a form, after that to save that information
+2.3. Creating a form that, allows the user to input into a form, after that to save that information
    creating a card. In other words when user inputs something, it will create first a object,
    after that, it will be stored into the array, and finally a card is creating to be shown into the display.
-4. After that cards, that were created and displayed now needs to be removed from the DOM and the array,
+2.4. After that cards, that were created and displayed now needs to be removed from the DOM and the array,
    so when user is done reading, he can delete it and make a new one.
    The easy solution was to use data-attributes, that allows the cards to have a unique ID so can be deleted.
-5. The final objective is, to be created a function that, allows the user to toggle a button for each book when is created,
+2.5. The final objective is, to be created a function that, allows the user to toggle a button for each book when is created,
    so the book status can be read or not read.
 
-6. My personal objective
+3. My personal objective
 
    My personal objective, was a definitely a fun one, it tested me on my understanding of constructor and object, even if it's
    was a small project, also i was heavily tested on DOM, so when each time a book is stored and after that removed,
    by keeping rendering the array without removing the objects by accident.
 
-7. Notes and lessons learned
+4. Notes and lessons learned
 
    After creating the project, i gained much more DOM knowledge, so can be transferred into the upcoming project,
    learned what is a constructor, a prototype, this as a keyword in certain situations.
@@ -38,8 +38,8 @@ The objectives of this project, were to build a library project, that were five 
    when an object is deleted.
    And about event targets of parentNode, that allows me first to see where the event is happened after that,
    to use parentNode to see where is the element to save it in a variable.
-
-8. Things to improve when visiting the project
+   
+5. Things to improve when visiting the project
 
    The first thing to improve is, to make a more dynamic way of creating that object, since now i initialize the properties.
    The second is, to use prototype since i used constructor without a prototype to create these functions.
